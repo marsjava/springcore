@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
-
+	  
 	<bean id="single" class="com.spcore.beanscope.WelcomeBean" scope="singleton">
 		<!-- <property name="message" value="Welcome to Spring world."></property> -->
 	</bean>
@@ -13,5 +13,10 @@
 	
 	<bean id="lifecycle" class="com.spcore.lifecycle.WelcomeBean" init-method="init" destroy-method="destroy">
 		<property name="message" value="Bean is performed service method."></property>
+	</bean>	
+	
+	<bean id="processor" class="com.spcore.processor.WelcomeBean" init-method="init" destroy-method="destroy">
+		<property name="message" value="Now, Bean is performed service method."></property>
 	</bean>
+	<bean class="com.spcore.processor.InitWelcomeBean" />
 </beans>
