@@ -2,9 +2,17 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
-	<bean id="travelBy" class="com.spcore.forms.Travel">
+	<!--  <bean id="travelBy" class="com.spcore.forms.Travel">
 		<property name="v">
 			<ref parent="bus"/>
 		</property>
+	</bean> -->
+	<bean id="world" class="com.spcore.inheritance.Helloworld">
+		<property name="message1" value="Welcome, Hello World!" />
+		<property name="message2" value="This is Java Spring world!"/>
+	</bean>
+	<bean id="india" class="com.spcore.inheritance.Helloindia" parent="world">
+		<property name="message1" value="Welcome, Hello India.!" />
+		<property name="message3" value="Sathyameva Jayte.!" />
 	</bean>
 </beans>
