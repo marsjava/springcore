@@ -19,4 +19,6 @@
 		<property name="message" value="Now, Bean is performed service method."></property>
 	</bean>
 	<bean class="com.spcore.processor.InitWelcomeBean" />
+	
+	
 </beans>

@@ -15,4 +15,8 @@
 		<property name="message1" value="Welcome, Hello India.!" />
 		<property name="message3" value="Sathyameva Jayte.!" />
 	</bean>
+	<bean id="whatsApp" class="com.spcore.di.services.WhatAppService" />
+	<bean id="myXmlConfig" class="com.spcore.di.consumer.MyXMLApplication">
+		<property name="service" ref="whatsApp"></property>
+	</bean>
 </beans>

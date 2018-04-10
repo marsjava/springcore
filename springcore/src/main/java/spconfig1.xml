@@ -10,4 +10,9 @@
 		<property name="noOfSeats" value="36"></property>
 		<property name="maxSpeed" value="80"></property>
 	</bean>	
+	<!--  <bean id="myXmlConfig" class="com.spcore.di.consumer.MyXMLApplication">
+		<constructor-arg>
+			<bean class="com.spcore.di.services.TwitterService" />
+		</constructor-arg>
+	</bean>	-->
 </beans>
