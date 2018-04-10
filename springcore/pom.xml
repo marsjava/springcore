@@ -35,6 +35,16 @@
     </dependency>
     <dependency>
     	<groupId>org.springframework</groupId>
+    	<artifactId>spring-tx</artifactId>
+    	<version>${springframework.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-jdbc</artifactId>
+    	<version>${springframework.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
     	<artifactId>spring-context-support</artifactId>
     	<version>${springframework.version}</version>
     </dependency>
@@ -63,6 +73,11 @@
     	<artifactId>spring-webmvc</artifactId>
     	<version>${springframework.version}</version>
     </dependency>
+    <dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.6</version>
+	</dependency>
   </dependencies>
   <build>
   	<plugins>

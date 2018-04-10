@@ -10,6 +10,9 @@
 		<config>src/main/java/spconfig.xml</config>
 		<config>src/main/java/spconfig1.xml</config>
 		<config>src/main/java/spconfig2.xml</config>
+		<config>src/main/java/spconfig3.xml</config>
+		<config>src/main/java/spconfig4.xml</config>
+		<config>src/main/java/spconfig5.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

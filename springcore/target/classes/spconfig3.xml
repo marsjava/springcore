@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+	<bean id="collection" class="com.spcore.collections.MyCollections">
+		<property name="nameList">
+			<list>
+				<value>Rajendran</value>
+				<value>Marikannan</value>
+				<value>Karkuvel</value>
+				<value>Saravanavel</value>
+				<value>Srihari</value>
+			</list>			
+		</property>
+		<property name="regId">
+			<set>
+				<value>1201</value>
+				<value>1202</value>
+				<value>1203</value>
+				<value>1204</value>
+				<value>1205</value>
+			</set>
+		</property>
+		<property name="address">
+			<map>
+				<entry key="MS" value="Chennai Egmore"></entry>
+				<entry key="MAS" value="Chennai Central"></entry>
+				<entry key="CVP" value="Kovilpatti"></entry>
+				<entry key="CBE" value="Coimbatore"></entry>
+				<entry key="MDU" value="Madurai"></entry>				
+			</map>
+		</property>
+		<property name="myProps">
+			<props>
+				<prop key="IND">India</prop>
+				<prop key="PAK">Pakistan</prop>
+				<prop key="AUS">Australia</prop>
+				<prop key="WI">WestIndies</prop>
+				<prop key="SA">SouthAfrica</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
