@@ -17,6 +17,6 @@ public class App {
         System.out.println(iIndia.getMessage2());
         System.out.println(iIndia.getMessage3());
         
-        //ctx.close();
+        ctx.close();
 	}
 }
